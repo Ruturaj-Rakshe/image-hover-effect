@@ -54,6 +54,10 @@ npm install gsap
 
 This is my first open source component! So feel absolutely free to suggest improvements or report issues.
 
+## License
+
+MIT - see [LICENSE](LICENSE) file for details.
+
 
 
 
