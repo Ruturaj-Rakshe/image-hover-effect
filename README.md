@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# React GSAP Image Hover Effect
 
-## Getting Started
+Inspired by Codrops, refactored by Ruturaj Rakshe. Built with Nextjs, TailwindCSS, GSAP.
 
-First, run the development server:
+A beautiful multi-layer image hover animation component built with React and GSAP.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- Multi-layer image hover effects
+- Smooth GSAP animations
+- Customizable number of layers
+- Multiple animation types (scale, rotation, movement)
+- Easy to integrate
+
+## 📦 Installation
+
+Make sure you have GSAP and React installed:
+
+## Usage
+
+1. Copy the ImageHover.ts and hoverImage function into your project
+2. Use the component in your React App:
+
+```
+import { hoverImage } from './lib/ImageHover';
+
+function MyComponent() {
+  // Use with useRef and useEffect as shown in the example
+  return (
+    <div
+      ref={imageRef}
+      className="image-hover"
+      style={{ backgroundImage: "url('/your-image.jpg')" }}
+      data-repetition-elems="8"
+    />
+  );
+}
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Configuration
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Use data attributes to customize:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```data-repetition-elems``` - Number of layers (default: 8)
+```data-repetition-duration``` - Animation duration
+```data-repetition-ease``` - Easing function
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```node
+npm install gsap
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+This is my first open source component! So feel absolutely free to suggest improvements or report issues.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT - see [LICENSE](LICENSE) file for details.
+
+
+
+
