@@ -1,5 +1,7 @@
 # React GSAP Image Hover Effect
 
+Inspired by Codrops, refactored by Ruturaj Rakshe. Built with Nextjs, TailwindCSS, GSAP.
+
 A beautiful multi-layer image hover animation component built with React and GSAP.
 
 ## Features
